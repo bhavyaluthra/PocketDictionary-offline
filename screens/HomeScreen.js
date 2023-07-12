@@ -18,7 +18,7 @@ export default class HomeScreen extends Component{
   getWord=(text)=>{
     var text = text.toLowerCase()
     try{
-      var word = dictionary[text]["word"]
+      var word = dictionary [text]["word"]
 
       var lexicalCategory = dictionary [text]["lexicalCategory"]
 
@@ -97,7 +97,7 @@ export default class HomeScreen extends Component{
                     <Text style={styles.detailsTitle}> Type :{" "}  </Text>
                     <Text style={{fontSize:18}}>
                       {/*Display the category here*/}
-                      {this.state.definition}
+                      {this.state.lexicalCategory}
                     </Text>
                   </View>
                   <View style={{flexDirection:'row',flexWrap: 'wrap'}}>
